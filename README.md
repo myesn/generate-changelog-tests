@@ -22,7 +22,10 @@
 最简单地尝试：
 ```bash
 yarn global add commit-and-tag-version
+# 从 v1.0.0 开始，每次执行后在上一次的版本号后递增，比如 v1.0.1、v1.0.2
 commit-and-tag-version
+# 完全自定义版本号
+commit-and-tag-version --release-as 1.1.0
 ```
 更多的用法，还是看上面的文档。
 
