@@ -27,7 +27,10 @@ commit-and-tag-version
 # 完全自定义版本号
 commit-and-tag-version --release-as 1.1.0
 ```
-更多的用法，还是看上面的文档。
+
+命令执行后，会在执行命令的目录中创建 [`CHANGELOG.md`](CHANGELOG.md) 文件，并且会自动修改 [`package.json`](package.json) 文件中的 `version` 字段。
+
+更多的用法，还得看文档：[CLI Usage](https://github.com/absolute-version/commit-and-tag-version?tab=readme-ov-file#cli-usage)
 
 # vercel/release
 
