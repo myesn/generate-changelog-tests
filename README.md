@@ -34,7 +34,11 @@ commit-and-tag-version --release-as 1.1.0
 3. 自动 `git add` 和 `git commit` 以上修改
 4. 为当前 commit 执行 `git tag`
 
-然后我们使用简单的 `git push` 命令推送 commit 到 remote，但是 tags 并不会被推送，需要手动执行以下命令推送本地的 tags 到 remote：
+当执行 `commit-and-tag-version` 后可以看到，它已经给出后续的命令提示：`git push --follow-tags origin main & npm publish`，`npm publish` 我用不到，所以我只使用前面的命令即可，执行完毕后：
+- commit 将会被推送到 remote
+- tags 也将会被推送到 remote
+
+但如果仅使用简单的 `git push` 命令推送 commit 到 remote，还需要手动执行以下命令推送本地的 tags 到 remote：
 - 推送本地所有 tag：`git push --tags origin`
 - 推送本地指定 tag：`git push origin v1.0.0`
 
