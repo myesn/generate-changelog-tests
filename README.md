@@ -30,7 +30,7 @@ commit-and-tag-version --release-as 1.1.0
 
 命令执行后：
 1. 在执行命令的目录中创建 [`CHANGELOG.md`](CHANGELOG.md) 文件
-2. 并且会自动修改 [`package.json`](package.json) 文件中的 `version` 字段
+2. 如果有 [`package.json`](package.json) 会自动修改其中的 `version` 字段
 3. 自动 `git add` 和 `git commit` 以上修改
 4. 为当前 commit 执行 `git tag`
 
