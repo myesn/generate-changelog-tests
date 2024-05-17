@@ -28,9 +28,20 @@ commit-and-tag-version
 commit-and-tag-version --release-as 1.1.0
 ```
 
-命令执行后，会在执行命令的目录中创建 [`CHANGELOG.md`](CHANGELOG.md) 文件，并且会自动修改 [`package.json`](package.json) 文件中的 `version` 字段。
+命令执行后：
+1. 在执行命令的目录中创建 [`CHANGELOG.md`](CHANGELOG.md) 文件
+2. 并且会自动修改 [`package.json`](package.json) 文件中的 `version` 字段
+3. 自动 `git add` 和 `git commit` 以上修改
+4. 为当前 commit 执行 `git tag`
 
-更多的用法，还得看文档：[CLI Usage](https://github.com/absolute-version/commit-and-tag-version?tab=readme-ov-file#cli-usage)
+然后我们使用简单的 `git push` 命令推送 commit 到 remote，但是 tags 并不会被推送，需要手动执行以下命令推送本地的 tags 到 remote：
+- 推送本地所有 tag：`git push --tags origin`
+- 推送本地指定 tag：`git push origin v1.0.0`
+
+更多的用法，还得看文档：
+- [commit and tag version CLI Usage](https://github.com/absolute-version/commit-and-tag-version?tab=readme-ov-file#cli-usage)
+- [How to Push Git Tags to Remote](https://kodekloud.com/blog/how-to-push-git-tags-to-remote/)
+- [2.6 Git Basics - Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
 
 # vercel/release
 
