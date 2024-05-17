@@ -1,6 +1,6 @@
 {
   "name": "vercel-release-changelog",
-  "version": "1.0.0",
+  "version": "1.0.0-canary.0",
   "main": "index.js",
   "repository": "https://github.com/myesn/vercel-release-changelog-tests.git",
   "author": "myesn <myesn@foxmail.com>",
