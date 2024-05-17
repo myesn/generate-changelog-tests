@@ -10,3 +10,8 @@
 已经有佬提了 issue：https://github.com/vercel/release/issues/186
 
 这错误就像套娃一样，无语了，并且我才发现 latest commit 时间是 `5b434c9 · 2 years ago`，OK 我放弃。
+
+# git
+
+这里有一些直接通过 git 命令查询 commits 消息的方式：
+https://stackoverflow.com/questions/3523534/what-are-some-good-ways-to-manage-a-changelog-using-git
