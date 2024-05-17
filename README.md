@@ -22,7 +22,7 @@
 最简单地尝试：
 ```bash
 yarn global add commit-and-tag-version
-commit-and-tag-version --first-release
+commit-and-tag-version
 ```
 更多的用法，还是看上面的文档。
 
